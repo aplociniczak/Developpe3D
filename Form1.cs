@@ -23,7 +23,7 @@ namespace Developpe3D
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd_b1 = new OpenFileDialog();
-            ofd_b1.Filter = "PNG|*.png|JPEG|*.jpeg";
+            ofd_b1.Filter = "All Files|*.*|PNG|*.png|JPEG|*.jpeg";
             if (ofd_b1.ShowDialog() == DialogResult.OK)
             {                
                 FilePath_B1.Text = ofd_b1.FileName;
@@ -189,6 +189,31 @@ namespace Developpe3D
             PB_IMG_P3D.MouseMove += new MouseEventHandler(PB_P3D_MouseMove);
             PB_IMG_P3D.MouseEnter += new EventHandler(PB_MouseEnter);
             Controls.Add(PB_IMG_P3D);
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LayoutConfMat_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void preview_P3D_Click(object sender, EventArgs e)
