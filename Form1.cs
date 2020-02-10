@@ -19,13 +19,13 @@ namespace Developpe3D
 
 
 
-        /*Bouton 1 */ 
-        private void button1_Click(object sender, EventArgs e)
+        /*Bouton 1 */
+        private void B_Browse_VT_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd_b1 = new OpenFileDialog();
             ofd_b1.Filter = "All Files|*.*|PNG|*.png|JPEG|*.jpeg";
             if (ofd_b1.ShowDialog() == DialogResult.OK)
-            {                
+            {
                 FilePath_B1.Text = ofd_b1.FileName;
                 FileName_B1.Text = ofd_b1.SafeFileName;
                 PB_IMG_VT.ImageLocation = ofd_b1.FileName;
@@ -39,7 +39,7 @@ namespace Developpe3D
 
 
         /*Bouton 2 */
-        private void button2_Click(object sender, EventArgs e)
+        private void B_Browse_P3D_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd_b2 = new OpenFileDialog();
             ofd_b2.Filter = "PNG|*.png|JPEG|*.jpeg";
@@ -54,15 +54,7 @@ namespace Developpe3D
             PB_IMG_P3D.Image = img_p3d;
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Calcul_b2_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -74,10 +66,7 @@ namespace Developpe3D
             this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button3_Click_2(object sender, EventArgs e)
         {
@@ -105,14 +94,7 @@ namespace Developpe3D
                 crpY = e.Y;
 
             }
-        }
-
-        
-
-        private void preview_VT_Click(object sender, EventArgs e)
-        {
-
-        }
+        }   
 
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -172,16 +154,7 @@ namespace Developpe3D
             }
         }
 
-        protected override void OnMouseEnter(EventArgs e)
-        {
-            base.OnMouseEnter(e);
-            Cursor = Cursors.Default;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void Select_Area_P3D_Click(object sender, EventArgs e)
         {
@@ -191,32 +164,12 @@ namespace Developpe3D
             Controls.Add(PB_IMG_P3D);
         }
 
-        private void button1_Click_2(object sender, EventArgs e)
+         private void LayoutConfMat_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void LayoutConfMat_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void preview_P3D_Click(object sender, EventArgs e)
+        private void B_ConfMat_Click(object sender, EventArgs e)
         {
 
         }
@@ -241,11 +194,6 @@ namespace Developpe3D
 
             PB_Preview_P3D.Image = (Image)crpImg;
             PB_Preview_P3D.SizeMode = PictureBoxSizeMode.StretchImage;
-        }
-
-        private void PB_IMG_VT_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

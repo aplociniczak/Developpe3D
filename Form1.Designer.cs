@@ -46,8 +46,8 @@
             this.B_ConfMat = new System.Windows.Forms.Button();
             this.LayoutConfMat = new System.Windows.Forms.TableLayoutPanel();
             this.L_TP = new System.Windows.Forms.Label();
-            this.L_FP = new System.Windows.Forms.Label();
             this.L_FN = new System.Windows.Forms.Label();
+            this.L_FP = new System.Windows.Forms.Label();
             this.L_TN = new System.Windows.Forms.Label();
             this.TB_TP = new System.Windows.Forms.TextBox();
             this.TB_FP = new System.Windows.Forms.TextBox();
@@ -68,10 +68,12 @@
             this.B_Browse_VT.TabIndex = 0;
             this.B_Browse_VT.Text = "Parcourir...";
             this.B_Browse_VT.UseVisualStyleBackColor = true;
-            this.B_Browse_VT.Click += new System.EventHandler(this.button1_Click);
+            this.B_Browse_VT.Click += new System.EventHandler(this.B_Browse_VT_Click);
             // 
             // FilePath_B1
             // 
+            this.FilePath_B1.BackColor = System.Drawing.Color.White;
+            this.FilePath_B1.Enabled = false;
             this.FilePath_B1.Location = new System.Drawing.Point(34, 147);
             this.FilePath_B1.Name = "FilePath_B1";
             this.FilePath_B1.Size = new System.Drawing.Size(423, 20);
@@ -79,6 +81,8 @@
             // 
             // FileName_B1
             // 
+            this.FileName_B1.BackColor = System.Drawing.Color.White;
+            this.FileName_B1.Enabled = false;
             this.FileName_B1.Location = new System.Drawing.Point(201, 72);
             this.FileName_B1.Name = "FileName_B1";
             this.FileName_B1.Size = new System.Drawing.Size(256, 20);
@@ -92,10 +96,12 @@
             this.B_Browse_P3D.TabIndex = 2;
             this.B_Browse_P3D.Text = "Parcourir...";
             this.B_Browse_P3D.UseVisualStyleBackColor = true;
-            this.B_Browse_P3D.Click += new System.EventHandler(this.button2_Click);
+            this.B_Browse_P3D.Click += new System.EventHandler(this.B_Browse_P3D_Click);
             // 
             // FilePath_B2
             // 
+            this.FilePath_B2.BackColor = System.Drawing.Color.White;
+            this.FilePath_B2.Enabled = false;
             this.FilePath_B2.Location = new System.Drawing.Point(34, 559);
             this.FilePath_B2.Name = "FilePath_B2";
             this.FilePath_B2.Size = new System.Drawing.Size(423, 20);
@@ -103,6 +109,8 @@
             // 
             // FileName_B2
             // 
+            this.FileName_B2.BackColor = System.Drawing.Color.White;
+            this.FileName_B2.Enabled = false;
             this.FileName_B2.Location = new System.Drawing.Point(201, 484);
             this.FileName_B2.Name = "FileName_B2";
             this.FileName_B2.Size = new System.Drawing.Size(256, 20);
@@ -117,7 +125,6 @@
             this.PB_IMG_VT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PB_IMG_VT.TabIndex = 4;
             this.PB_IMG_VT.TabStop = false;
-            this.PB_IMG_VT.Click += new System.EventHandler(this.PB_IMG_VT_Click);
             // 
             // PB_IMG_P3D
             // 
@@ -142,24 +149,24 @@
             // PB_Preview_VT
             // 
             this.PB_Preview_VT.BackColor = System.Drawing.Color.ForestGreen;
+            this.PB_Preview_VT.Enabled = false;
             this.PB_Preview_VT.Location = new System.Drawing.Point(1199, 72);
             this.PB_Preview_VT.Name = "PB_Preview_VT";
             this.PB_Preview_VT.Size = new System.Drawing.Size(226, 198);
             this.PB_Preview_VT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PB_Preview_VT.TabIndex = 8;
             this.PB_Preview_VT.TabStop = false;
-            this.PB_Preview_VT.Click += new System.EventHandler(this.preview_VT_Click);
             // 
             // PB_Preview_P3D
             // 
             this.PB_Preview_P3D.BackColor = System.Drawing.Color.ForestGreen;
+            this.PB_Preview_P3D.Enabled = false;
             this.PB_Preview_P3D.Location = new System.Drawing.Point(1199, 484);
             this.PB_Preview_P3D.Name = "PB_Preview_P3D";
             this.PB_Preview_P3D.Size = new System.Drawing.Size(226, 198);
             this.PB_Preview_P3D.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PB_Preview_P3D.TabIndex = 9;
             this.PB_Preview_P3D.TabStop = false;
-            this.PB_Preview_P3D.Click += new System.EventHandler(this.preview_P3D_Click);
             // 
             // Select_Area_VT
             // 
@@ -209,7 +216,7 @@
             this.B_ConfMat.TabIndex = 14;
             this.B_ConfMat.Text = "Matrice de confusion";
             this.B_ConfMat.UseVisualStyleBackColor = true;
-            this.B_ConfMat.Click += new System.EventHandler(this.button1_Click_2);
+            this.B_ConfMat.Click += new System.EventHandler(this.B_ConfMat_Click);
             // 
             // LayoutConfMat
             // 
@@ -227,6 +234,7 @@
             this.LayoutConfMat.Controls.Add(this.TB_FP, 3, 0);
             this.LayoutConfMat.Controls.Add(this.TB_FN, 1, 1);
             this.LayoutConfMat.Controls.Add(this.TB_TN, 3, 1);
+            this.LayoutConfMat.Enabled = false;
             this.LayoutConfMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LayoutConfMat.Location = new System.Drawing.Point(98, 695);
             this.LayoutConfMat.Name = "LayoutConfMat";
@@ -239,50 +247,52 @@
             // 
             // L_TP
             // 
-            this.L_TP.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.L_TP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.L_TP.AutoSize = true;
+            this.L_TP.Enabled = false;
             this.L_TP.Location = new System.Drawing.Point(3, 9);
             this.L_TP.Name = "L_TP";
             this.L_TP.Size = new System.Drawing.Size(31, 13);
             this.L_TP.TabIndex = 0;
             this.L_TP.Text = "TP : ";
             // 
-            // L_FP
-            // 
-            this.L_FP.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.L_FP.AutoSize = true;
-            this.L_FP.Location = new System.Drawing.Point(161, 9);
-            this.L_FP.Name = "L_FP";
-            this.L_FP.Size = new System.Drawing.Size(30, 13);
-            this.L_FP.TabIndex = 1;
-            this.L_FP.Text = "FP : ";
-            this.L_FP.Click += new System.EventHandler(this.label2_Click_1);
-            // 
             // L_FN
             // 
-            this.L_FN.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.L_FN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.L_FN.AutoSize = true;
+            this.L_FN.Enabled = false;
             this.L_FN.Location = new System.Drawing.Point(3, 40);
             this.L_FN.Name = "L_FN";
             this.L_FN.Size = new System.Drawing.Size(31, 13);
             this.L_FN.TabIndex = 2;
             this.L_FN.Text = "FN : ";
-            this.L_FN.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // L_FP
+            // 
+            this.L_FP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.L_FP.AutoSize = true;
+            this.L_FP.Enabled = false;
+            this.L_FP.Location = new System.Drawing.Point(162, 9);
+            this.L_FP.Name = "L_FP";
+            this.L_FP.Size = new System.Drawing.Size(30, 13);
+            this.L_FP.TabIndex = 1;
+            this.L_FP.Text = "FP : ";
             // 
             // L_TN
             // 
-            this.L_TN.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.L_TN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.L_TN.AutoSize = true;
+            this.L_TN.Enabled = false;
             this.L_TN.Location = new System.Drawing.Point(161, 40);
             this.L_TN.Name = "L_TN";
             this.L_TN.Size = new System.Drawing.Size(32, 13);
             this.L_TN.TabIndex = 3;
             this.L_TN.Text = "TN : ";
-            this.L_TN.Click += new System.EventHandler(this.label4_Click);
             // 
             // TB_TP
             // 
             this.TB_TP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TB_TP.BackColor = System.Drawing.Color.White;
             this.TB_TP.Enabled = false;
             this.TB_TP.Location = new System.Drawing.Point(47, 5);
             this.TB_TP.Name = "TB_TP";
@@ -293,6 +303,7 @@
             // TB_FP
             // 
             this.TB_FP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TB_FP.BackColor = System.Drawing.Color.White;
             this.TB_FP.Enabled = false;
             this.TB_FP.Location = new System.Drawing.Point(209, 5);
             this.TB_FP.Name = "TB_FP";
@@ -303,6 +314,7 @@
             // TB_FN
             // 
             this.TB_FN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TB_FN.BackColor = System.Drawing.Color.White;
             this.TB_FN.Enabled = false;
             this.TB_FN.Location = new System.Drawing.Point(47, 36);
             this.TB_FN.Name = "TB_FN";
@@ -313,6 +325,7 @@
             // TB_TN
             // 
             this.TB_TN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TB_TN.BackColor = System.Drawing.Color.White;
             this.TB_TN.Enabled = false;
             this.TB_TN.Location = new System.Drawing.Point(209, 36);
             this.TB_TN.Name = "TB_TN";
