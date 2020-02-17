@@ -191,6 +191,9 @@ namespace Developpe3D
             long FN = 0;
             long FP = 0;
             long TN = 0;
+            long sum = 0;
+            float accuracy = 0;
+            float error = 0;
 
             //variables parcours images
             int px_width = 0;
@@ -271,6 +274,13 @@ namespace Developpe3D
             TB_FN.Text = FN.ToString();
             TB_FP.Text = FP.ToString();
             TB_TN.Text = TN.ToString();
+
+            sum = TP + FN + FP + TN;
+            accuracy = (float)Decimal.Divide((TP + TN), sum);
+            error = (float)Decimal.Divide((FP + FN), sum);
+
+            TB_Accuracy.Text = accuracy.ToString();
+            TB_Error.Text = error.ToString();
         }
 
         public static Image resizeImage(Image imgToResize, Size size)
