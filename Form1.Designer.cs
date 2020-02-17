@@ -46,12 +46,12 @@
             this.B_ConfMat = new System.Windows.Forms.Button();
             this.LayoutConfMat = new System.Windows.Forms.TableLayoutPanel();
             this.L_TP = new System.Windows.Forms.Label();
-            this.L_FN = new System.Windows.Forms.Label();
             this.L_FP = new System.Windows.Forms.Label();
+            this.L_FN = new System.Windows.Forms.Label();
             this.L_TN = new System.Windows.Forms.Label();
             this.TB_TP = new System.Windows.Forms.TextBox();
-            this.TB_FP = new System.Windows.Forms.TextBox();
             this.TB_FN = new System.Windows.Forms.TextBox();
+            this.TB_FP = new System.Windows.Forms.TextBox();
             this.TB_TN = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_IMG_VT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_IMG_P3D)).BeginInit();
@@ -150,10 +150,9 @@
             // 
             this.PB_Preview_VT.BackColor = System.Drawing.Color.ForestGreen;
             this.PB_Preview_VT.Enabled = false;
-            this.PB_Preview_VT.Location = new System.Drawing.Point(1199, 72);
+            this.PB_Preview_VT.Location = new System.Drawing.Point(1175, 72);
             this.PB_Preview_VT.Name = "PB_Preview_VT";
-            this.PB_Preview_VT.Size = new System.Drawing.Size(226, 198);
-            this.PB_Preview_VT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PB_Preview_VT.Size = new System.Drawing.Size(250, 250);
             this.PB_Preview_VT.TabIndex = 8;
             this.PB_Preview_VT.TabStop = false;
             // 
@@ -161,16 +160,15 @@
             // 
             this.PB_Preview_P3D.BackColor = System.Drawing.Color.ForestGreen;
             this.PB_Preview_P3D.Enabled = false;
-            this.PB_Preview_P3D.Location = new System.Drawing.Point(1199, 484);
+            this.PB_Preview_P3D.Location = new System.Drawing.Point(1175, 484);
             this.PB_Preview_P3D.Name = "PB_Preview_P3D";
-            this.PB_Preview_P3D.Size = new System.Drawing.Size(226, 198);
-            this.PB_Preview_P3D.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PB_Preview_P3D.Size = new System.Drawing.Size(250, 250);
             this.PB_Preview_P3D.TabIndex = 9;
             this.PB_Preview_P3D.TabStop = false;
             // 
             // Select_Area_VT
             // 
-            this.Select_Area_VT.Location = new System.Drawing.Point(1199, 304);
+            this.Select_Area_VT.Location = new System.Drawing.Point(1190, 343);
             this.Select_Area_VT.Name = "Select_Area_VT";
             this.Select_Area_VT.Size = new System.Drawing.Size(226, 23);
             this.Select_Area_VT.TabIndex = 10;
@@ -180,27 +178,27 @@
             // 
             // Crop_P3D
             // 
-            this.Crop_P3D.Location = new System.Drawing.Point(1199, 734);
+            this.Crop_P3D.Location = new System.Drawing.Point(1190, 783);
             this.Crop_P3D.Name = "Crop_P3D";
             this.Crop_P3D.Size = new System.Drawing.Size(226, 23);
             this.Crop_P3D.TabIndex = 11;
             this.Crop_P3D.Text = "Crop Area";
             this.Crop_P3D.UseVisualStyleBackColor = true;
-            this.Crop_P3D.Click += new System.EventHandler(this.button4_Click);
+            this.Crop_P3D.Click += new System.EventHandler(this.Crop_P3D_Click);
             // 
             // Crop_VT
             // 
-            this.Crop_VT.Location = new System.Drawing.Point(1199, 333);
+            this.Crop_VT.Location = new System.Drawing.Point(1190, 372);
             this.Crop_VT.Name = "Crop_VT";
             this.Crop_VT.Size = new System.Drawing.Size(226, 23);
             this.Crop_VT.TabIndex = 12;
             this.Crop_VT.Text = "Crop Area";
             this.Crop_VT.UseVisualStyleBackColor = true;
-            this.Crop_VT.Click += new System.EventHandler(this.button1_Click_1);
+            this.Crop_VT.Click += new System.EventHandler(this.Crop_VT_Click);
             // 
             // Select_Area_P3D
             // 
-            this.Select_Area_P3D.Location = new System.Drawing.Point(1199, 705);
+            this.Select_Area_P3D.Location = new System.Drawing.Point(1190, 754);
             this.Select_Area_P3D.Name = "Select_Area_P3D";
             this.Select_Area_P3D.Size = new System.Drawing.Size(226, 23);
             this.Select_Area_P3D.TabIndex = 13;
@@ -227,12 +225,12 @@
             this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.1118F));
             this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.81988F));
             this.LayoutConfMat.Controls.Add(this.L_TP, 0, 0);
-            this.LayoutConfMat.Controls.Add(this.L_FN, 0, 1);
-            this.LayoutConfMat.Controls.Add(this.L_FP, 2, 0);
+            this.LayoutConfMat.Controls.Add(this.L_FP, 0, 1);
+            this.LayoutConfMat.Controls.Add(this.L_FN, 2, 0);
             this.LayoutConfMat.Controls.Add(this.L_TN, 2, 1);
             this.LayoutConfMat.Controls.Add(this.TB_TP, 1, 0);
-            this.LayoutConfMat.Controls.Add(this.TB_FP, 3, 0);
-            this.LayoutConfMat.Controls.Add(this.TB_FN, 1, 1);
+            this.LayoutConfMat.Controls.Add(this.TB_FN, 3, 0);
+            this.LayoutConfMat.Controls.Add(this.TB_FP, 1, 1);
             this.LayoutConfMat.Controls.Add(this.TB_TN, 3, 1);
             this.LayoutConfMat.Enabled = false;
             this.LayoutConfMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -243,7 +241,6 @@
             this.LayoutConfMat.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.LayoutConfMat.Size = new System.Drawing.Size(322, 62);
             this.LayoutConfMat.TabIndex = 15;
-            this.LayoutConfMat.Paint += new System.Windows.Forms.PaintEventHandler(this.LayoutConfMat_Paint);
             // 
             // L_TP
             // 
@@ -256,27 +253,27 @@
             this.L_TP.TabIndex = 0;
             this.L_TP.Text = "TP : ";
             // 
-            // L_FN
-            // 
-            this.L_FN.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.L_FN.AutoSize = true;
-            this.L_FN.Enabled = false;
-            this.L_FN.Location = new System.Drawing.Point(3, 40);
-            this.L_FN.Name = "L_FN";
-            this.L_FN.Size = new System.Drawing.Size(31, 13);
-            this.L_FN.TabIndex = 2;
-            this.L_FN.Text = "FN : ";
-            // 
             // L_FP
             // 
             this.L_FP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.L_FP.AutoSize = true;
             this.L_FP.Enabled = false;
-            this.L_FP.Location = new System.Drawing.Point(162, 9);
+            this.L_FP.Location = new System.Drawing.Point(3, 40);
             this.L_FP.Name = "L_FP";
             this.L_FP.Size = new System.Drawing.Size(30, 13);
-            this.L_FP.TabIndex = 1;
+            this.L_FP.TabIndex = 2;
             this.L_FP.Text = "FP : ";
+            // 
+            // L_FN
+            // 
+            this.L_FN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.L_FN.AutoSize = true;
+            this.L_FN.Enabled = false;
+            this.L_FN.Location = new System.Drawing.Point(161, 9);
+            this.L_FN.Name = "L_FN";
+            this.L_FN.Size = new System.Drawing.Size(31, 13);
+            this.L_FN.TabIndex = 1;
+            this.L_FN.Text = "FN : ";
             // 
             // L_TN
             // 
@@ -300,27 +297,27 @@
             this.TB_TP.Size = new System.Drawing.Size(100, 20);
             this.TB_TP.TabIndex = 4;
             // 
-            // TB_FP
-            // 
-            this.TB_FP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TB_FP.BackColor = System.Drawing.Color.White;
-            this.TB_FP.Enabled = false;
-            this.TB_FP.Location = new System.Drawing.Point(209, 5);
-            this.TB_FP.Name = "TB_FP";
-            this.TB_FP.ReadOnly = true;
-            this.TB_FP.Size = new System.Drawing.Size(100, 20);
-            this.TB_FP.TabIndex = 5;
-            // 
             // TB_FN
             // 
             this.TB_FN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TB_FN.BackColor = System.Drawing.Color.White;
             this.TB_FN.Enabled = false;
-            this.TB_FN.Location = new System.Drawing.Point(47, 36);
+            this.TB_FN.Location = new System.Drawing.Point(209, 5);
             this.TB_FN.Name = "TB_FN";
             this.TB_FN.ReadOnly = true;
             this.TB_FN.Size = new System.Drawing.Size(100, 20);
-            this.TB_FN.TabIndex = 6;
+            this.TB_FN.TabIndex = 5;
+            // 
+            // TB_FP
+            // 
+            this.TB_FP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TB_FP.BackColor = System.Drawing.Color.White;
+            this.TB_FP.Enabled = false;
+            this.TB_FP.Location = new System.Drawing.Point(47, 36);
+            this.TB_FP.Name = "TB_FP";
+            this.TB_FP.ReadOnly = true;
+            this.TB_FP.Size = new System.Drawing.Size(100, 20);
+            this.TB_FP.TabIndex = 6;
             // 
             // TB_TN
             // 
@@ -357,7 +354,7 @@
             this.Controls.Add(this.B_Browse_VT);
             this.Name = "Developpe3D";
             this.Text = "Developpe3D";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Click += new System.EventHandler(this.Developpe3D_Click);
             ((System.ComponentModel.ISupportInitialize)(this.PB_IMG_VT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_IMG_P3D)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Preview_VT)).EndInit();
@@ -389,12 +386,12 @@
         private System.Windows.Forms.Button B_ConfMat;
         private System.Windows.Forms.TableLayoutPanel LayoutConfMat;
         private System.Windows.Forms.Label L_TP;
-        private System.Windows.Forms.Label L_FP;
         private System.Windows.Forms.Label L_FN;
+        private System.Windows.Forms.Label L_FP;
         private System.Windows.Forms.Label L_TN;
         private System.Windows.Forms.TextBox TB_TP;
-        private System.Windows.Forms.TextBox TB_FP;
         private System.Windows.Forms.TextBox TB_FN;
+        private System.Windows.Forms.TextBox TB_FP;
         private System.Windows.Forms.TextBox TB_TN;
     }
 }
