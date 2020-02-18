@@ -46,14 +46,14 @@
             this.Select_Area_P3D = new System.Windows.Forms.Button();
             this.B_ConfMat = new System.Windows.Forms.Button();
             this.LayoutConfMat = new System.Windows.Forms.TableLayoutPanel();
-            this.L_TP = new System.Windows.Forms.Label();
-            this.L_FP = new System.Windows.Forms.Label();
+            this.TB_FN = new System.Windows.Forms.TextBox();
+            this.TB_TN = new System.Windows.Forms.TextBox();
             this.L_FN = new System.Windows.Forms.Label();
             this.L_TN = new System.Windows.Forms.Label();
             this.TB_TP = new System.Windows.Forms.TextBox();
-            this.TB_FN = new System.Windows.Forms.TextBox();
+            this.L_TP = new System.Windows.Forms.Label();
+            this.L_FP = new System.Windows.Forms.Label();
             this.TB_FP = new System.Windows.Forms.TextBox();
-            this.TB_TN = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -65,6 +65,7 @@
             this.TB_Error = new System.Windows.Forms.TextBox();
             this.L_VT = new System.Windows.Forms.Label();
             this.L_P3D = new System.Windows.Forms.Label();
+            this.B_Save = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PB_IMG_VT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_IMG_P3D)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Preview_VT)).BeginInit();
@@ -238,7 +239,7 @@
             this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.70248F));
             this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.86777F));
             this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.52892F));
-            this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 107F));
+            this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
             this.LayoutConfMat.Controls.Add(this.TB_FN, 4, 1);
             this.LayoutConfMat.Controls.Add(this.TB_TN, 4, 2);
             this.LayoutConfMat.Controls.Add(this.L_FN, 3, 1);
@@ -262,6 +263,61 @@
             this.LayoutConfMat.Size = new System.Drawing.Size(351, 105);
             this.LayoutConfMat.TabIndex = 15;
             // 
+            // TB_FN
+            // 
+            this.TB_FN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TB_FN.BackColor = System.Drawing.Color.White;
+            this.TB_FN.Enabled = false;
+            this.TB_FN.Location = new System.Drawing.Point(246, 39);
+            this.TB_FN.Name = "TB_FN";
+            this.TB_FN.ReadOnly = true;
+            this.TB_FN.Size = new System.Drawing.Size(100, 20);
+            this.TB_FN.TabIndex = 5;
+            // 
+            // TB_TN
+            // 
+            this.TB_TN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TB_TN.BackColor = System.Drawing.Color.White;
+            this.TB_TN.Enabled = false;
+            this.TB_TN.Location = new System.Drawing.Point(246, 75);
+            this.TB_TN.Name = "TB_TN";
+            this.TB_TN.ReadOnly = true;
+            this.TB_TN.Size = new System.Drawing.Size(100, 20);
+            this.TB_TN.TabIndex = 7;
+            // 
+            // L_FN
+            // 
+            this.L_FN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.L_FN.AutoSize = true;
+            this.L_FN.Enabled = false;
+            this.L_FN.Location = new System.Drawing.Point(206, 43);
+            this.L_FN.Name = "L_FN";
+            this.L_FN.Size = new System.Drawing.Size(31, 13);
+            this.L_FN.TabIndex = 1;
+            this.L_FN.Text = "FN : ";
+            // 
+            // L_TN
+            // 
+            this.L_TN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.L_TN.AutoSize = true;
+            this.L_TN.Enabled = false;
+            this.L_TN.Location = new System.Drawing.Point(205, 79);
+            this.L_TN.Name = "L_TN";
+            this.L_TN.Size = new System.Drawing.Size(32, 13);
+            this.L_TN.TabIndex = 3;
+            this.L_TN.Text = "TN : ";
+            // 
+            // TB_TP
+            // 
+            this.TB_TP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TB_TP.BackColor = System.Drawing.Color.White;
+            this.TB_TP.Enabled = false;
+            this.TB_TP.Location = new System.Drawing.Point(96, 39);
+            this.TB_TP.Name = "TB_TP";
+            this.TB_TP.ReadOnly = true;
+            this.TB_TP.Size = new System.Drawing.Size(100, 20);
+            this.TB_TP.TabIndex = 4;
+            // 
             // L_TP
             // 
             this.L_TP.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -284,50 +340,6 @@
             this.L_FP.TabIndex = 2;
             this.L_FP.Text = "FP : ";
             // 
-            // L_FN
-            // 
-            this.L_FN.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.L_FN.AutoSize = true;
-            this.L_FN.Enabled = false;
-            this.L_FN.Location = new System.Drawing.Point(206, 43);
-            this.L_FN.Name = "L_FN";
-            this.L_FN.Size = new System.Drawing.Size(31, 13);
-            this.L_FN.TabIndex = 1;
-            this.L_FN.Text = "FN : ";
-            // 
-            // L_TN
-            // 
-            this.L_TN.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.L_TN.AutoSize = true;
-            this.L_TN.Enabled = false;
-            this.L_TN.Location = new System.Drawing.Point(206, 79);
-            this.L_TN.Name = "L_TN";
-            this.L_TN.Size = new System.Drawing.Size(32, 13);
-            this.L_TN.TabIndex = 3;
-            this.L_TN.Text = "TN : ";
-            // 
-            // TB_TP
-            // 
-            this.TB_TP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TB_TP.BackColor = System.Drawing.Color.White;
-            this.TB_TP.Enabled = false;
-            this.TB_TP.Location = new System.Drawing.Point(96, 39);
-            this.TB_TP.Name = "TB_TP";
-            this.TB_TP.ReadOnly = true;
-            this.TB_TP.Size = new System.Drawing.Size(100, 20);
-            this.TB_TP.TabIndex = 4;
-            // 
-            // TB_FN
-            // 
-            this.TB_FN.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TB_FN.BackColor = System.Drawing.Color.White;
-            this.TB_FN.Enabled = false;
-            this.TB_FN.Location = new System.Drawing.Point(246, 39);
-            this.TB_FN.Name = "TB_FN";
-            this.TB_FN.ReadOnly = true;
-            this.TB_FN.Size = new System.Drawing.Size(100, 20);
-            this.TB_FN.TabIndex = 5;
-            // 
             // TB_FP
             // 
             this.TB_FP.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -338,17 +350,6 @@
             this.TB_FP.ReadOnly = true;
             this.TB_FP.Size = new System.Drawing.Size(100, 20);
             this.TB_FP.TabIndex = 6;
-            // 
-            // TB_TN
-            // 
-            this.TB_TN.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TB_TN.BackColor = System.Drawing.Color.White;
-            this.TB_TN.Enabled = false;
-            this.TB_TN.Location = new System.Drawing.Point(246, 75);
-            this.TB_TN.Name = "TB_TN";
-            this.TB_TN.ReadOnly = true;
-            this.TB_TN.Size = new System.Drawing.Size(100, 20);
-            this.TB_TN.TabIndex = 7;
             // 
             // label3
             // 
@@ -383,9 +384,9 @@
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(245, 0);
+            this.label4.Location = new System.Drawing.Point(244, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 33);
+            this.label4.Size = new System.Drawing.Size(104, 33);
             this.label4.TabIndex = 16;
             this.label4.Text = "Noir";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -414,7 +415,7 @@
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 30);
+            this.label5.Size = new System.Drawing.Size(84, 30);
             this.label5.TabIndex = 0;
             this.label5.Text = "Précision";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -424,7 +425,7 @@
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Location = new System.Drawing.Point(3, 30);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 31);
+            this.label6.Size = new System.Drawing.Size(84, 31);
             this.label6.TabIndex = 0;
             this.label6.Text = "Taux d\'erreur";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -434,7 +435,7 @@
             this.TB_Accuracy.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TB_Accuracy.BackColor = System.Drawing.Color.White;
             this.TB_Accuracy.Enabled = false;
-            this.TB_Accuracy.Location = new System.Drawing.Point(135, 5);
+            this.TB_Accuracy.Location = new System.Drawing.Point(136, 5);
             this.TB_Accuracy.Name = "TB_Accuracy";
             this.TB_Accuracy.ReadOnly = true;
             this.TB_Accuracy.Size = new System.Drawing.Size(169, 20);
@@ -445,7 +446,7 @@
             this.TB_Error.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TB_Error.BackColor = System.Drawing.Color.White;
             this.TB_Error.Enabled = false;
-            this.TB_Error.Location = new System.Drawing.Point(135, 35);
+            this.TB_Error.Location = new System.Drawing.Point(136, 35);
             this.TB_Error.Name = "TB_Error";
             this.TB_Error.ReadOnly = true;
             this.TB_Error.Size = new System.Drawing.Size(169, 20);
@@ -475,11 +476,22 @@
             this.L_P3D.TabIndex = 17;
             this.L_P3D.Text = "Image Projeté 3D";
             // 
+            // B_Save
+            // 
+            this.B_Save.Location = new System.Drawing.Point(43, 868);
+            this.B_Save.Name = "B_Save";
+            this.B_Save.Size = new System.Drawing.Size(414, 23);
+            this.B_Save.TabIndex = 18;
+            this.B_Save.Text = "Sauvegarder le résultat";
+            this.B_Save.UseVisualStyleBackColor = true;
+            this.B_Save.Click += new System.EventHandler(this.B_Save_Click);
+            // 
             // Developpe3D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1453, 903);
+            this.Controls.Add(this.B_Save);
             this.Controls.Add(this.L_P3D);
             this.Controls.Add(this.L_VT);
             this.Controls.Add(this.Layout_Params);
@@ -555,6 +567,7 @@
         private System.Windows.Forms.TextBox TB_Error;
         private System.Windows.Forms.Label L_VT;
         private System.Windows.Forms.Label L_P3D;
+        private System.Windows.Forms.Button B_Save;
     }
 }
 

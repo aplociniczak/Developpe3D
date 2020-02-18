@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Developpe3D
 {
@@ -174,6 +176,19 @@ namespace Developpe3D
         private void Developpe3D_Click(object sender, EventArgs e)
         {
             Cursor = Cursors.Default;
+        }
+
+        private void B_Save_Click(object sender, EventArgs e)
+        {
+            Rectangle bounds = this.Bounds;
+            using (Bitmap bitmap = new Bitmap(bounds.Width, bounds.Height))
+            {
+                using (Graphics g = Graphics.FromImage(bitmap))
+                {
+                    g.CopyFromScreen(new Point(bounds.Left, bounds.Top), Point.Empty, bounds.Size);
+                }
+                bitmap.Save(@"D:\Dropbox\Dropbox\Polytech\5A\PFE\Code\Developpe3D\Captures\Capture_"+ DateTime.Now.ToFileTime() + ".png", ImageFormat.Png);
+            }
         }
 
         private void Select_Area_P3D_Click(object sender, EventArgs e)
