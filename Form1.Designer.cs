@@ -48,16 +48,16 @@
             this.LayoutConfMat = new System.Windows.Forms.TableLayoutPanel();
             this.TB_FN = new System.Windows.Forms.TextBox();
             this.TB_TN = new System.Windows.Forms.TextBox();
-            this.L_FN = new System.Windows.Forms.Label();
-            this.L_TN = new System.Windows.Forms.Label();
             this.TB_TP = new System.Windows.Forms.TextBox();
-            this.L_TP = new System.Windows.Forms.Label();
+            this.L_FN = new System.Windows.Forms.Label();
             this.L_FP = new System.Windows.Forms.Label();
+            this.L_TN = new System.Windows.Forms.Label();
             this.TB_FP = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.L_TP = new System.Windows.Forms.Label();
             this.Layout_Params = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -66,6 +66,8 @@
             this.L_VT = new System.Windows.Forms.Label();
             this.L_P3D = new System.Windows.Forms.Label();
             this.B_Save = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PB_IMG_VT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_IMG_P3D)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Preview_VT)).BeginInit();
@@ -236,22 +238,22 @@
             this.LayoutConfMat.BackColor = System.Drawing.SystemColors.Control;
             this.LayoutConfMat.ColumnCount = 5;
             this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.90083F));
-            this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.70248F));
-            this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.86777F));
-            this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.52892F));
-            this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
+            this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.89958F));
+            this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.44352F));
+            this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.89958F));
+            this.LayoutConfMat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
             this.LayoutConfMat.Controls.Add(this.TB_FN, 4, 1);
             this.LayoutConfMat.Controls.Add(this.TB_TN, 4, 2);
-            this.LayoutConfMat.Controls.Add(this.L_FN, 3, 1);
-            this.LayoutConfMat.Controls.Add(this.L_TN, 3, 2);
             this.LayoutConfMat.Controls.Add(this.TB_TP, 2, 1);
-            this.LayoutConfMat.Controls.Add(this.L_TP, 1, 1);
+            this.LayoutConfMat.Controls.Add(this.L_FN, 3, 1);
             this.LayoutConfMat.Controls.Add(this.L_FP, 1, 2);
+            this.LayoutConfMat.Controls.Add(this.L_TN, 1, 1);
             this.LayoutConfMat.Controls.Add(this.TB_FP, 2, 2);
             this.LayoutConfMat.Controls.Add(this.label3, 0, 1);
-            this.LayoutConfMat.Controls.Add(this.label1, 0, 2);
             this.LayoutConfMat.Controls.Add(this.label2, 2, 0);
             this.LayoutConfMat.Controls.Add(this.label4, 4, 0);
+            this.LayoutConfMat.Controls.Add(this.label1, 0, 2);
+            this.LayoutConfMat.Controls.Add(this.L_TP, 3, 2);
             this.LayoutConfMat.Enabled = false;
             this.LayoutConfMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LayoutConfMat.Location = new System.Drawing.Point(76, 629);
@@ -268,7 +270,7 @@
             this.TB_FN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TB_FN.BackColor = System.Drawing.Color.White;
             this.TB_FN.Enabled = false;
-            this.TB_FN.Location = new System.Drawing.Point(246, 39);
+            this.TB_FN.Location = new System.Drawing.Point(243, 39);
             this.TB_FN.Name = "TB_FN";
             this.TB_FN.ReadOnly = true;
             this.TB_FN.Size = new System.Drawing.Size(100, 20);
@@ -279,73 +281,62 @@
             this.TB_TN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TB_TN.BackColor = System.Drawing.Color.White;
             this.TB_TN.Enabled = false;
-            this.TB_TN.Location = new System.Drawing.Point(246, 75);
+            this.TB_TN.Location = new System.Drawing.Point(243, 75);
             this.TB_TN.Name = "TB_TN";
             this.TB_TN.ReadOnly = true;
             this.TB_TN.Size = new System.Drawing.Size(100, 20);
             this.TB_TN.TabIndex = 7;
-            // 
-            // L_FN
-            // 
-            this.L_FN.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.L_FN.AutoSize = true;
-            this.L_FN.Enabled = false;
-            this.L_FN.Location = new System.Drawing.Point(206, 43);
-            this.L_FN.Name = "L_FN";
-            this.L_FN.Size = new System.Drawing.Size(31, 13);
-            this.L_FN.TabIndex = 1;
-            this.L_FN.Text = "FN : ";
-            // 
-            // L_TN
-            // 
-            this.L_TN.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.L_TN.AutoSize = true;
-            this.L_TN.Enabled = false;
-            this.L_TN.Location = new System.Drawing.Point(205, 79);
-            this.L_TN.Name = "L_TN";
-            this.L_TN.Size = new System.Drawing.Size(32, 13);
-            this.L_TN.TabIndex = 3;
-            this.L_TN.Text = "TN : ";
             // 
             // TB_TP
             // 
             this.TB_TP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TB_TP.BackColor = System.Drawing.Color.White;
             this.TB_TP.Enabled = false;
-            this.TB_TP.Location = new System.Drawing.Point(96, 39);
+            this.TB_TP.Location = new System.Drawing.Point(94, 39);
             this.TB_TP.Name = "TB_TP";
             this.TB_TP.ReadOnly = true;
             this.TB_TP.Size = new System.Drawing.Size(100, 20);
             this.TB_TP.TabIndex = 4;
             // 
-            // L_TP
+            // L_FN
             // 
-            this.L_TP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.L_TP.AutoSize = true;
-            this.L_TP.Enabled = false;
-            this.L_TP.Location = new System.Drawing.Point(56, 43);
-            this.L_TP.Name = "L_TP";
-            this.L_TP.Size = new System.Drawing.Size(31, 13);
-            this.L_TP.TabIndex = 0;
-            this.L_TP.Text = "TP : ";
+            this.L_FN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.L_FN.AutoSize = true;
+            this.L_FN.Enabled = false;
+            this.L_FN.Location = new System.Drawing.Point(202, 43);
+            this.L_FN.Name = "L_FN";
+            this.L_FN.Size = new System.Drawing.Size(31, 13);
+            this.L_FN.TabIndex = 1;
+            this.L_FN.Text = "FN : ";
             // 
             // L_FP
             // 
             this.L_FP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.L_FP.AutoSize = true;
             this.L_FP.Enabled = false;
-            this.L_FP.Location = new System.Drawing.Point(57, 79);
+            this.L_FP.Location = new System.Drawing.Point(55, 79);
             this.L_FP.Name = "L_FP";
             this.L_FP.Size = new System.Drawing.Size(30, 13);
             this.L_FP.TabIndex = 2;
             this.L_FP.Text = "FP : ";
+            // 
+            // L_TN
+            // 
+            this.L_TN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.L_TN.AutoSize = true;
+            this.L_TN.Enabled = false;
+            this.L_TN.Location = new System.Drawing.Point(56, 36);
+            this.L_TN.Name = "L_TN";
+            this.L_TN.Size = new System.Drawing.Size(28, 26);
+            this.L_TN.TabIndex = 3;
+            this.L_TN.Text = "TN : ";
             // 
             // TB_FP
             // 
             this.TB_FP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TB_FP.BackColor = System.Drawing.Color.White;
             this.TB_FP.Enabled = false;
-            this.TB_FP.Location = new System.Drawing.Point(96, 75);
+            this.TB_FP.Location = new System.Drawing.Point(94, 75);
             this.TB_FP.Name = "TB_FP";
             this.TB_FP.ReadOnly = true;
             this.TB_FP.Size = new System.Drawing.Size(100, 20);
@@ -353,43 +344,52 @@
             // 
             // label3
             // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Location = new System.Drawing.Point(3, 33);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 33);
+            this.label3.Size = new System.Drawing.Size(46, 33);
             this.label3.TabIndex = 16;
             this.label3.Text = "Blanc";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(3, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 39);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Noir";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label2
             // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(94, 0);
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.Location = new System.Drawing.Point(92, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 33);
+            this.label2.Size = new System.Drawing.Size(104, 33);
             this.label2.TabIndex = 16;
             this.label2.Text = "Blanc";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(244, 0);
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.Location = new System.Drawing.Point(241, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 33);
             this.label4.TabIndex = 16;
             this.label4.Text = "Noir";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(3, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 33);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Noir";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // L_TP
+            // 
+            this.L_TP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.L_TP.AutoSize = true;
+            this.L_TP.Enabled = false;
+            this.L_TP.Location = new System.Drawing.Point(202, 79);
+            this.L_TP.Name = "L_TP";
+            this.L_TP.Size = new System.Drawing.Size(31, 13);
+            this.L_TP.TabIndex = 0;
+            this.L_TP.Text = "TP : ";
             // 
             // Layout_Params
             // 
@@ -486,6 +486,30 @@
             this.B_Save.UseVisualStyleBackColor = true;
             this.B_Save.Click += new System.EventHandler(this.B_Save_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(31, 678);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(26, 17);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "VT";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(276, 609);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 17);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "P3D";
+            // 
             // Developpe3D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -493,6 +517,8 @@
             this.ClientSize = new System.Drawing.Size(1453, 903);
             this.Controls.Add(this.B_Save);
             this.Controls.Add(this.L_P3D);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.L_VT);
             this.Controls.Add(this.Layout_Params);
             this.Controls.Add(this.LayoutConfMat);
@@ -568,6 +594,8 @@
         private System.Windows.Forms.Label L_VT;
         private System.Windows.Forms.Label L_P3D;
         private System.Windows.Forms.Button B_Save;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
 
